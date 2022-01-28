@@ -8,9 +8,13 @@
     --os-windows-icon-dodge: 0;
 }
 
+* {
+    font-weight: regular !important;
+}
+
 body {
-    --glue-font-family: "MADE Outer Sans","NotoColorEmoji",spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
-    --info-font-family: "MADE Outer Sans","NotoColorEmoji",spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+    --glue-font-family: "MADE Outer Sans Light",Helvetica Neue,"NotoColorEmoji",spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+    --info-font-family: "MADE Outer Sans Light",Helvetica Neue,"NotoColorEmoji",spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
     font-family: var(--glue-font-family);
     letter-spacing: normal;
 }
@@ -19,9 +23,29 @@ body {
 .main-type-mestoBold,
 .main-type-ballad,
 .main-type-balladBold,
-.main-type-canon {
+.main-type-canon,
+.UyzJidwrGk3awngSGIwv {
     font-family: var(--info-font-family);
     letter-spacing: normal;
+    color: var(--spice-text);
+}
+
+.Svg-sc-1bi12j5-0{
+    color: var(--spice-text);
+}
+
+.Svg-sc-1bi12j5-0.hDgDGI.home-icon,
+.Svg-sc-1bi12j5-0.hDgDGI.home-active-icon,
+.Svg-sc-1bi12j5-0.hDgDGI.search-icon,
+.Svg-sc-1bi12j5-0.hDgDGI.search-active-icon,
+.Svg-sc-1bi12j5-0.hDgDGI.collection-icon,
+.Svg-sc-1bi12j5-0.hDgDGI.collection-active-icon {
+    color: var(--spice-marin);
+}
+
+
+.main-entityHeader-divider {
+    color: var(--spice-text) !important;
 }
 
 .main-type-bass {
@@ -29,7 +53,7 @@ body {
 }
 
 .main-type-ballad {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .lyrics-lyricsContainer-LyricsLine {
@@ -438,7 +462,7 @@ html.sidebar-hide-text .main-rootlist-statusIcons {
 }
 
 .main-trackInfo-name {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .main-topBar-topbarContent .main-playButton-PlayButton {
@@ -659,6 +683,11 @@ li.GlueDropTarget {
 .main-collectionLinkButton-collectionLinkButton .main-collectionLinkButton-collectionLinkText,
 .main-createPlaylistButton-button {
     opacity: 1;
+}
+
+.main-collectionLinkButton-selected.active{
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 .main-likedSongsButton-likedSongsIcon,
